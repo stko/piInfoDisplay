@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+	<title>Who Am I - designed by Nathalie &amp; Chris</title>
+	<script src="index.js"></script>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+</style>
+</head>
+<body>
+
+
+Arabischen Text immer mit &amp; beginnen!
+
+<form action="#" method="post" name="greenform" id="greenform" onsubmit="doSend()">
+  <input type="hidden" value="green" name="color" id="color"> <br>
+  <label>Grüner Text:<br>
+  <textarea id="text" name="text" rows="10" cols="50">
+Kommen Sie herein!
+
+Please Come in!
+
+&amp;&#1578;&#1593;&#1575;&#1604;!
+
+</textarea> 
+<label>
+ <br>
+ <label>Schriftgröße
+    <select name="fontsize" id="fontsize">
+      <option>10</option>
+      <option>20</option>
+      <option>30</option>
+      <option>50</option>
+      <option selected>80</option>
+      <option>100</option>
+      <option>120</option>
+      <option>160</option>
+    </select>
+  </label>
+ <br>
+  <input type="submit" value="Anzeigen" class="button">
+</form>
+
+<p/>
+
+<form action="#" method="post" name="redform" id="redform" onsubmit="doSend()">
+  <input type="hidden" value="red" name="color" id="color"> <br>
+  <label>Roter Text:<br>
+  <textarea id="text" name="text" rows="10" cols="50">
+
+ Der Laden ist voll - Bitte Warten Sie!
+
+The Shop is occupied - Please Wait!
+
+&amp;المحل مشغول - يرجى الانتظار!
+
+</textarea> 
+<label>
+ <br>
+ <label>Schriftgröße
+    <select name="fontsize" id="fontsize">
+      <option>10</option>
+      <option>20</option>
+      <option>30</option>
+      <option>50</option>
+      <option selected>80</option>
+      <option>100</option>
+      <option>120</option>
+      <option>160</option>
+    </select>
+  </label>
+ <br>
+  <input type="submit" value="Anzeigen" class="button button3">
+</form>
+
+<p/>
+
+<form action="#" method="post" name="clearform" id="clearform" onsubmit="doClear()">
+  <input type="submit" value="Eigene Texte wieder löschen">
+</form>
+
+
+</body>
+</html>
